@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaberLink - Recursos Educacionais para ENEM e Vestibulares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        header, nav, main, footer {
+            padding: 10px;
+        }
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        main {
+            padding: 20px;
+            margin-bottom: 60px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8em;
+        }
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+            .hamburger {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+            }
+            nav ul.show {
+                display: flex;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SaberLink</h1>
+        <p>Seu link para o conhecimento</p>
+    </header>
+
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul id="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">ENEM</a></li>
+            <li><a href="#">Vestibulares</a></li>
+            <li><a href="#">Recursos de Estudo</a></li>
+            <li><a href="#">Bem-Estar Estudantil</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Bem-vindo ao SaberLink</h2>
+            <p>Aqui você encontra recursos educacionais gratuitos para o ENEM e vestibulares da UECE e UVA.</p>
+        </section>
+
+        <section>
+            <h2>Destaques</h2>
+            <ul>
+                <li>Dicas para o ENEM 2024</li>
+                <li>Calendário de provas UECE e UVA</li>
+                <li>Material gratuito de revisão</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>O SaberLink é um projeto escolar desenvolvido por estudantes para estudantes. Nossa missão é facilitar o acesso a recursos educacionais de qualidade.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SaberLink - Desenvolvimento de Sistemas 3º Ano - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
