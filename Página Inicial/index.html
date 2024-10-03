@@ -114,6 +114,12 @@
             body {
                 font-size: 14px;
             }
+            header {
+                padding-bottom: 60px; /* Adiciona espaço para o menu móvel */
+            }
+            nav {
+                position: relative;
+            }
             .hamburger {
                 display: block;
             }
@@ -125,15 +131,13 @@
                 left: 0;
                 width: 100%;
                 background-color: var(--nav-bg);
+                z-index: 1000; /* Garante que o menu fique acima do conteúdo */
             }
             nav ul.show {
                 display: flex;
             }
             nav ul li {
                 margin: 10px 0;
-            }
-            nav {
-                flex-wrap: wrap;
             }
             .theme-toggle {
                 margin-left: auto;
@@ -188,6 +192,11 @@
         function toggleMenu() {
             var menu = document.getElementById("menu");
             menu.classList.toggle("show");
+            
+            // Ajusta o scroll para o topo quando o menu é aberto
+            if (menu.classList.contains("show")) {
+                window.scrollTo(0, 0);
+            }
         }
 
         function toggleTheme() {
@@ -205,7 +214,7 @@
             }
         }
 
-        // Verificar o tema padrão do navegador do usuário.
+        // Check for saved theme preference or prefer-color-scheme
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
