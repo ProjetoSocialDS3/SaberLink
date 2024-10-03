@@ -5,58 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaberLink - Recursos Educacionais para ENEM e Vestibulares</title>
     <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --header-bg: #f4f4f4;
+            --nav-bg: #333333;
+            --nav-text: #ffffff;
+            --button-bg: #4CAF50;
+            --button-text: #ffffff;
+        }
+
+        .dark-theme {
+            --bg-color: #333333;
+            --text-color: #ffffff;
+            --header-bg: #222222;
+            --nav-bg: #444444;
+            --nav-text: #ffffff;
+            --button-bg: #45a049;
+            --button-text: #ffffff;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             font-size: 16px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
         }
+
         header, nav, main, footer {
             padding: 10px;
         }
+
         header {
-            background-color: #f4f4f4;
+            background-color: var(--header-bg);
             text-align: center;
+            position: relative;
         }
+
         nav {
-            background-color: #333;
+            background-color: var(--nav-bg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
         }
+
         nav ul li {
-            display: inline-block;
             margin-right: 10px;
         }
+
         nav ul li a {
-            color: white;
+            color: var(--nav-text);
             text-decoration: none;
             padding: 5px 10px;
         }
+
         main {
             padding: 20px;
             margin-bottom: 60px;
         }
+
         footer {
-            background-color: #333;
-            color: white;
+            background-color: var(--nav-bg);
+            color: var(--nav-text);
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
             font-size: 0.8em;
         }
+
         .hamburger {
             display: none;
-            font-size: 30px;
-            color: white;
+            font-size: 24px;
+            color: var(--nav-text);
             background: none;
             border: none;
             cursor: pointer;
         }
+
+        .theme-toggle {
+            font-size: 16px;
+            color: var(--button-text);
+            background-color: var(--button-bg);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--button-bg);
+            opacity: 0.9;
+        }
+
         @media screen and (max-width: 600px) {
             body {
                 font-size: 14px;
@@ -67,13 +120,23 @@
             nav ul {
                 display: none;
                 flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--nav-bg);
             }
             nav ul.show {
                 display: flex;
             }
             nav ul li {
-                display: block;
                 margin: 10px 0;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+            .theme-toggle {
+                margin-left: auto;
             }
         }
     </style>
@@ -93,6 +156,7 @@
             <li><a href="#">Recursos de Estudo</a></li>
             <li><a href="#">Bem-Estar Estudantil</a></li>
         </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
     </nav>
 
     <main>
@@ -117,7 +181,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 SaberLink - Desenvolvimento de Sistemas 3º Ano - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+        <p>&copy; 2024 SaberLink - Projeto Escolar. Todos os direitos reservados.</p>
     </footer>
 
     <script>
@@ -125,6 +189,31 @@
             var menu = document.getElementById("menu");
             menu.classList.toggle("show");
         }
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+            updateThemeToggleText();
+        }
+
+        function updateThemeToggleText() {
+            const themeToggle = document.querySelector('.theme-toggle');
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggle.textContent = 'Tema Claro';
+            } else {
+                themeToggle.textContent = 'Tema Escuro';
+            }
+        }
+
+        // Verificar o tema padrão do navegador do usuário.
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.body.classList.add('dark-theme');
+        }
+
+        updateThemeToggleText();
     </script>
 </body>
 </html>
