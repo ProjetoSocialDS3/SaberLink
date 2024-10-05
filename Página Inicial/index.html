@@ -1,228 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaberLink - Recursos Educacionais para ENEM e Vestibulares</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #333333;
-            --header-bg: #f4f4f4;
-            --nav-bg: #333333;
-            --nav-text: #ffffff;
-            --button-bg: #4CAF50;
-            --button-text: #ffffff;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            SaberLink - Recursos Educacionais para ENEM e Vestibulares
+        </title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --bs-primary: #4caf50;
+                --bs-primary-rgb: 76, 175, 80;
+            }
 
-        .dark-theme {
-            --bg-color: #333333;
-            --text-color: #ffffff;
-            --header-bg: #222222;
-            --nav-bg: #444444;
-            --nav-text: #ffffff;
-            --button-bg: #45a049;
-            --button-text: #ffffff;
-        }
+            .dark-theme {
+                --bs-body-bg: #333333;
+                --bs-body-color: #ffffff;
+            }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        header, nav, main, footer {
-            padding: 10px;
-        }
-
-        header {
-            background-color: var(--header-bg);
-            text-align: center;
-            position: relative;
-        }
-
-        nav {
-            background-color: var(--nav-bg);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: var(--nav-text);
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        main {
-            padding: 20px;
-            margin-bottom: 60px;
-        }
-
-        footer {
-            background-color: var(--nav-bg);
-            color: var(--nav-text);
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.8em;
-        }
-
-        .hamburger {
-            display: none;
-            font-size: 24px;
-            color: var(--nav-text);
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .theme-toggle {
-            font-size: 16px;
-            color: var(--button-text);
-            background-color: var(--button-bg);
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .theme-toggle:hover {
-            background-color: var(--button-bg);
-            opacity: 0.9;
-        }
-
-        @media screen and (max-width: 600px) {
             body {
-                font-size: 14px;
-            }
-            header {
-                padding-bottom: 60px; /* Adiciona espaço para o menu móvel */
-            }
-            nav {
-                position: relative;
-            }
-            .hamburger {
-                display: block;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: var(--nav-bg);
-                z-index: 1000; /* Garante que o menu fique acima do conteúdo */
-            }
-            nav ul.show {
+                transition:
+                    background-color 0.3s,
+                    color 0.3s;
+                min-height: 100vh;
                 display: flex;
+                flex-direction: column;
             }
-            nav ul li {
-                margin: 10px 0;
+
+            .navbar-custom {
+                background-color: var(--bs-primary);
             }
+
             .theme-toggle {
-                margin-left: auto;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
             }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>SaberLink</h1>
-        <p>Seu link para o conhecimento</p>
-    </header>
 
-    <nav>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul id="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">ENEM</a></li>
-            <li><a href="#">Vestibulares</a></li>
-            <li><a href="#">Recursos de Estudo</a></li>
-            <li><a href="#">Bem-Estar Estudantil</a></li>
-        </ul>
-        <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Bem-vindo ao SaberLink</h2>
-            <p>Aqui você encontra recursos educacionais gratuitos para o ENEM e vestibulares da UECE e UVA.</p>
-        </section>
-
-        <section>
-            <h2>Destaques</h2>
-            <ul>
-                <li>Dicas para o ENEM 2024</li>
-                <li>Calendário de provas UECE e UVA</li>
-                <li>Material gratuito de revisão</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Sobre Nós</h2>
-            <p>O SaberLink é um projeto escolar desenvolvido por estudantes para estudantes. Nossa missão é facilitar o acesso a recursos educacionais de qualidade.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 SaberLink - Projeto Escolar. Todos os direitos reservados.</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.classList.toggle("show");
-            
-            // Ajusta o scroll para o topo quando o menu é aberto
-            if (menu.classList.contains("show")) {
-                window.scrollTo(0, 0);
+            .theme-toggle:hover {
+                background-color: rgba(255, 255, 255, 0.1);
             }
-        }
 
-        function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
-            localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+            .dark-theme .navbar-custom {
+                background-color: #2c2c2c;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+
+            footer {
+                flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#">SaberLink</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                >Bem-Estar Estudantil</a
+                            >
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Bem-vindo ao SaberLink</h1>
+                <p class="lead">
+                    Aqui você encontra recursos educacionais gratuitos para o
+                    ENEM e vestibulares da UECE e UVA.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Destaques</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Dicas para o ENEM 2024
+                                </h5>
+                                <p class="card-text">
+                                    Confira nossas dicas exclusivas para se
+                                    preparar para o ENEM.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Saiba mais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Calendário de provas UECE e UVA
+                                </h5>
+                                <p class="card-text">
+                                    Fique por dentro das datas importantes dos
+                                    vestibulares.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Ver calendário</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Material gratuito de revisão
+                                </h5>
+                                <p class="card-text">
+                                    Acesse nossos materiais de estudo para
+                                    turbinar sua preparação.
+                                </p>
+                                <a href="#" class="btn btn-primary"
+                                    >Acessar materiais</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Sobre Nós</h2>
+                <p>
+                    O SaberLink é um projeto escolar desenvolvido por estudantes
+                    para estudantes. Nossa missão é facilitar o acesso a
+                    recursos educacionais de qualidade.
+                </p>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-light py-3 mt-4">
+            <div class="container text-center">
+                <p>
+                    &copy; 2024 SaberLink - EEEP Professora Maria de Jesus
+                    Rodrigues Alves - Desenvolvimento de Sistemas - 3º Ano.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function toggleTheme() {
+                document.body.classList.toggle("dark-theme");
+                localStorage.setItem(
+                    "theme",
+                    document.body.classList.contains("dark-theme")
+                        ? "dark"
+                        : "light",
+                );
+                updateThemeToggleText();
+            }
+
+            function updateThemeToggleText() {
+                const themeToggle = document.querySelector(".theme-toggle");
+                if (document.body.classList.contains("dark-theme")) {
+                    themeToggle.textContent = "Tema Claro";
+                } else {
+                    themeToggle.textContent = "Tema Escuro";
+                }
+            }
+
+            // Verificar tema salvo
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark =
+                window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+            if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+                document.body.classList.add("dark-theme");
+            }
+
             updateThemeToggleText();
-        }
-
-        function updateThemeToggleText() {
-            const themeToggle = document.querySelector('.theme-toggle');
-            if (document.body.classList.contains('dark-theme')) {
-                themeToggle.textContent = 'Tema Claro';
-            } else {
-                themeToggle.textContent = 'Tema Escuro';
-            }
-        }
-
-        // Check for saved theme preference or prefer-color-scheme
-        const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-            document.body.classList.add('dark-theme');
-        }
-
-        updateThemeToggleText();
-    </script>
-</body>
+        </script>
+    </body>
 </html>
