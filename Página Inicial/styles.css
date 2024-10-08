@@ -1,0 +1,44 @@
+:root {
+    --bs-primary: #4caf50;
+    --bs-primary-rgb: 76, 175, 80;
+}
+
+.dark-theme {
+    --bs-body-bg: #333333;
+    --bs-body-color: #ffffff;
+}
+
+body {
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    background-color: var(--bs-primary);
+}
+
+.theme-toggle {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .navbar-custom {
+    background-color: #2c2c2c;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
