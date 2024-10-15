@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaberLink - Recursos de Estudo</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Boxicons para ícones minimalistas -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SaberLink</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vestibulares.html"><i class='bx bx-graduation'></i> Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Recursos de Estudo</h1>
+                <p class="lead">
+                    Explore nossa coleção de recursos de estudo para aprimorar sua preparação para o ENEM e vestibulares.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Materiais de Estudo</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-open card-icon'></i>
+                                <h5 class="card-title">Resumos</h5>
+                                <p class="card-text">
+                                     Acesse resumos de matérias para o ENEM e vestibulares.
+                                </p>
+                                <a href="#" class="btn btn-primary custom-btn">Acessar resumos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-video card-icon'></i>
+                                <h5 class="card-title">Vídeos Explicativos</h5>
+                                <p class="card-text">
+                                    Confira vídeos explicativos para ajudar a entender conceitos difíceis.
+                                </p>
+                                <a href="#" class="btn btn-primary custom-btn">Ver vídeos</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-file card-icon'></i>
+                                <h5 class="card-title">Exercícios e Provas</h5>
+                                <p class="card-text">
+                                    Acesse exercícios e provas para praticar e avaliar seu conhecimento.
+                                </p>
+                                <a href="#" class="btn btn-primary custom-btn">Acessar exercícios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Recursos Online</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-globe card-icon'></i>
+                                <h5 class="card-title">Portais de Educação</h5>
+                                <p class="card-text">
+                                    Explore portais de educação que oferecem recursos de estudo gratuitos.
+                                </p>
+                                <a href="#" class="btn btn-primary custom-btn">Explorar portais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-reader card-icon'></i>
+                                <h5 class="card-title">Bibliotecas Online</h5>
+                                <p class="card-text">
+                                    Acesse bibliotecas online que oferecem livros e recursos de estudo.
+                                </p>
+                                <a href="#" class="btn btn-primary custom-btn">Acessar bibliotecas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-light py-3 mt-4">
+            <div class="container text-center">
+                <p>
+                    &copy; 2024 SaberLink - EEEP Professora Maria de Jesus
+                    Rodrigues Alves - Desenvolvimento de Sistemas - 3º Ano.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
