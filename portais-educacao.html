@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaberLink - Portais de Educação</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Boxicons para ícones minimalistas -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SaberLink</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Portais de Educação</h1>
+                <p class="lead">
+                    Explore estes portais educacionais gratuitos para complementar seus estudos para o ENEM e vestibulares.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-video card-icon'></i>
+                                <h5 class="card-title">Khan Academy</h5>
+                                <p class="card-text">
+                                    Plataforma educacional sem fins lucrativos que oferece aulas em vídeo e exercícios interativos em diversas disciplinas, incluindo matemática, ciências e preparação para testes como o ENEM.
+                                </p>
+                                <a href="https://pt.khanacademy.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bxs-graduation card-icon'></i>
+                                <h5 class="card-title">Coursera</h5>
+                                <p class="card-text">
+                                    Oferece cursos online de universidades renomadas. Embora muitos cursos sejam pagos, há uma seleção significativa de cursos gratuitos disponíveis.
+                                </p>
+                                <a href="https://www.coursera.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-brain card-icon'></i>
+                                <h5 class="card-title">edX</h5>
+                                <p class="card-text">
+                                    Plataforma colaborativa que disponibiliza cursos online de instituições como Harvard e MIT, com muitas opções gratuitas.
+                                </p>
+                                <a href="https://www.edx.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-laptop card-icon'></i>
+                                <h5 class="card-title">Udemy</h5>
+                                <p class="card-text">
+                                    Embora seja conhecida por seus cursos pagos, a Udemy também possui uma variedade de cursos gratuitos em diversas áreas.
+                                </p>
+                                <a href="https://www.udemy.com" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-reader card-icon'></i>
+                                <h5 class="card-title">Seneca Learning</h5>
+                                <p class="card-text">
+                                    Oferece resumos e questões sobre conteúdos do Ensino Fundamental, Médio e ENEM, utilizando métodos baseados em neurociência para facilitar o aprendizado.
+                                </p>
+                                <a href="https://senecalearning.com/pt-br/" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-game card-icon'></i>
+                                <h5 class="card-title">Matific</h5>
+                                <p class="card-text">
+                                    Uma plataforma que oferece jogos educativos online focados em matemática, com atividades interativas alinhadas ao currículo escolar.
+                                </p>
+                                <a href="https://www.matific.com/br/" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-video-recording card-icon'></i>
+                                <h5 class="card-title">Stoodi</h5>
+                                <p class="card-text">
+                                    Plataforma de ensino online que disponibiliza videoaulas, resumos teóricos e exercícios resolvidos, voltada para estudantes do ensino médio e preparação para vestibulares.
+                                </p>
+                                <a href="https://www.stoodi.com.br" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-open card-icon'></i>
+                                <h5 class="card-title">Brasil Escola</h5>
+                                <p class="card-text">
+                                    Oferece uma variedade de conteúdos educacionais gratuitos, incluindo artigos, exercícios e dicas para estudantes do ensino fundamental e médio.
+                                </p>
+                                <a href="https://brasilescola.uol.com.br" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-light py-3 mt-4">
+            <div class="container text-center">
+                <p>
+                    &copy; 2024 SaberLink - EEEP Professora Maria de Jesus
+                    Rodrigues Alves - Desenvolvimento de Sistemas - 3º Ano.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

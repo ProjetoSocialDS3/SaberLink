@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaberLink - Dicas de Preparação para Vestibulares</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Boxicons para ícones minimalistas -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">SaberLink</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Dicas de Preparação para Vestibulares</h1>
+                <p class="lead">
+                    Prepare-se adequadamente para os vestibulares da UVA e UECE com nossas dicas estratégicas.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Estratégias Essenciais</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-open card-icon'></i>
+                                <h5 class="card-title">Conheça o Edital</h5>
+                                <p class="card-text">
+                                    Estude o edital dos vestibulares para entender:
+                                    <ul>
+                                        <li>Disciplinas cobradas</li>
+                                        <li>Conteúdos prioritários</li>
+                                        <li>Formato das provas</li>
+                                        <li>Critérios de avaliação</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-task card-icon'></i>
+                                <h5 class="card-title">Provas Anteriores</h5>
+                                <p class="card-text">
+                                    Resolva provas de anos anteriores para:
+                                    <ul>
+                                        <li>Familiarizar-se com o estilo das questões</li>
+                                        <li>Identificar temas recorrentes</li>
+                                        <li>Treinar gestão de tempo</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-calendar card-icon'></i>
+                                <h5 class="card-title">Organização do Estudo</h5>
+                                <p class="card-text">
+                                    Crie um cronograma eficiente:
+                                    <ul>
+                                        <li>Inclua todas as disciplinas</li>
+                                        <li>Reserve tempo para revisões</li>
+                                        <li>Estabeleça metas diárias</li>
+                                        <li>Mantenha um ritmo constante</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Preparação Complementar</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-pen card-icon'></i>
+                                <h5 class="card-title">Redação</h5>
+                                <p class="card-text">
+                                    Aprimore suas habilidades de escrita:
+                                    <ul>
+                                        <li>Pratique dissertações argumentativas</li>
+                                        <li>Estude temas atuais</li>
+                                        <li>Peça feedback de professores</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-group card-icon'></i>
+                                <h5 class="card-title">Grupos de Estudo</h5>
+                                <p class="card-text">
+                                    Benefícios do estudo em grupo:
+                                    <ul>
+                                        <li>Discussão de conteúdos</li>
+                                        <li>Resolução de dúvidas</li>
+                                        <li>Troca de experiências</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class ='bx bx-heart card-icon'></i>
+                                <h5 class="card-title">Saúde Mental e Física</h5>
+                                <p class="card-text">
+                                    Mantenha uma rotina saudável:
+                                    <ul>
+                                        <li>Alimentação balanceada</li>
+                                        <li>Exercícios físicos regulares</li>
+                                        <li>Descanso adequado</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-dark text-light py-3 mt-4">
+            <div class="container text-center">
+                <p>
+                    &copy; 2024 SaberLink - EEEP Professora Maria de Jesus
+                    Rodrigues Alves - Desenvolvimento de Sistemas - 3º Ano.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
