@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaberLink - Estratégias de Estudo</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <!-- Boxicons para ícones minimalistas -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                    </li>
+                </ul>
+                <button class="btn theme-toggle" onclick="toggleTheme()">
+                    <i class='bx bx-moon'></i> Alternar Tema
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <section class="mb-4">
+            <h1 class="display-4">Dicas para Organizar a Rotina de Estudos</h1>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class='bx bx-time card-icon'></i>
+                            <h5 class="card-title">Estabeleça um Horário Fixo</h5>
+                            <p>Definir horários específicos para estudar ajuda a criar um hábito. Se possível, escolha momentos do dia em que você se sinta mais concentrado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class='bx bx-target-lock card-icon'></i>
+                            <h5 class="card-title">Comece com Metas Diárias Simples</h5>
+                            <p>Estabeleça metas pequenas e específicas para cada sessão de estudo, como "ler duas páginas" ou "resolver cinco questões". Isso evita sobrecarga e aumenta a sensação de progresso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class='bx bx-no-entry card-icon'></i>
+                            <h5 class="card-title">Ambiente Livre de Distrações</h5>
+                            <p>Um espaço limpo, com o essencial para estudar, ajuda a manter o foco. Fones de ouvido com ruído branco ou músicas instrumentais podem ajudar a minimizar distrações.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Aplicativos Úteis para Estudo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="flashed.png" class="app-logo" alt="Flashed">
+                            </div>
+                            <h5 class="card-title">Flashed</h5>
+                            <p class="card-text">Flashed é um aplicativo educacional que oferece um método consistente para gerar resultados no aprendizado de qualquer assunto.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?hl=en&id=com.bernardohmr.FlashEd" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/br/app/flashed/id6460138270" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="anki.png" class="app-logo" alt="Anki">
+                            </div>
+                            <h5 class="card-title">Anki</h5>
+                            <p class="card-text">Aplicativo de flashcards que utiliza o método de repetição espaçada para ajudar na memorização de informações.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/ankiapp-flashcards/id689577128" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="forest.png" class="app-logo" alt="Forest">
+                            </div>
+                            <h5 class="card-title">Forest</h5>
+                            <p class="card-text">Ajuda a manter o foco, permitindo que você "plante uma árvore" enquanto estuda e evita distrações.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=jp.ne.forest" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/forest-stay-focused/id866450515" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="keep.png" class="app-logo" alt="Google Keep">
+                            </div>
+                            <h5 class="card-title">Google Keep</h5>
+                            <p class="card-text">Um aplicativo de anotações que permite organizar ideias, listas e lembretes de forma simples e rápida.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.google.android.keep" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="khan.png" class="app-logo" alt="Khan Academy">
+                            </div>
+                            <h5 class="card-title">Khan Academy</h5>
+                            <p class="card-text">Plataforma educacional que oferece cursos gratuitos em diversas áreas, com vídeos e exercícios interativos.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=org.khankacademy.android" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/khan-academy/id469863705" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="app-logo-container mb-3">
+                                <img src="trello.png" class="app-logo" alt="Trello">
+                            </div>
+                            <h5 class="card-title">Trello</h5>
+                            <p class="card-text">Ferramenta de gerenciamento de projetos que utiliza quadros, listas e cartões para organizar tarefas e colaborar com equipes.</p>
+                            <div class="store-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.trello" target="_blank" class="me-2">
+                                    <img src="googleplay.png" alt="Google Play" class="store-badge">
+                                </a>
+                                <a href="https://apps.apple.com/us/app/trello/id461504587" target="_blank">
+                                    <img src="appstore.png" alt="App Store" class="store-badge">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Considerações Finais</h2>
+            <p class="lead">
+                Utilizar estratégias de estudo adequadas e ferramentas tecnológicas pode fazer uma grande diferença na sua preparação para o ENEM e vestibulares. Experimente diferentes métodos e aplicativos para descobrir o que funciona melhor para você. Lembre-se de que o equilíbrio entre estudo e descanso é fundamental para um aprendizado eficaz.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                </a>
+                <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eeepdstech?igsh=MW1nZzdqZXdna28wMg==" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,13 +10,17 @@
             rel="stylesheet"
         />
         <!-- Boxicons para ícones minimalistas -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">SaberLink</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                </a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -72,7 +76,7 @@
                                 <p class="card-text">
                                     Informações sobre o vestibular da Universidade Estadual do Ceará.
                                 </p>
-                                <a href="#" class="btn btn-primary custom-btn">Saiba mais</a>
+                                <a href="uece.html" class="btn btn-primary custom-btn">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +88,7 @@
                                 <p class="card-text">
                                     Detalhes sobre o processo seletivo da Universidade Estadual Vale do Acaraú.
                                 </p>
-                                <a href="#" class="btn btn-primary custom-btn">Saiba mais</a>
+                                <a href="uva.html" class="btn btn-primary custom-btn">Saiba mais</a>
                             </div>
                         </div>
                     </div>
@@ -122,15 +126,27 @@
             </section>
         </main>
 
-        <footer class="bg-dark text-light py-3 mt-4">
-            <div class="container text-center">
-                <p>
-                    &copy; 2024 SaberLink - EEEP Professora Maria de Jesus
-                    Rodrigues Alves - Desenvolvimento de Sistemas - 3º Ano.
-                    Todos os direitos reservados.
-                </p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                </a>
+                <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eeepdstech?igsh=MW1nZzdqZXdna28wMg==" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
             </div>
-        </footer>
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
         <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

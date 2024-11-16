@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaberLink - UVA</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Boxicons para ícones minimalistas -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Universidade Estadual Vale do Acaraú (UVA)</h1>
+                <p class="lead">
+                    Informações sobre como ingressar e os processos seletivos da UVA.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Como ingressar na UVA?</h2>
+                <p>A UVA realiza dois processos seletivos ao longo do ano, um em cada semestre, e ambos possuem grande número de vagas disponíveis.</p>
+                <p>De acordo com o edital do Vestibular UVA, são oferecidas 1.134 vagas em cursos de graduação neste processo seletivo.</p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Como funcionam as cotas da UVA?</h2>
+                <p>A instituição reserva 50% das vagas para os candidatos que se enquadram nas categorias de cotas. Para estar incluído na categoria de cotas, é necessário:</p>
+                <ul>
+                    <li>Ter concluído os três anos do Ensino Médio em escolas públicas no estado do Ceará; e</li>
+                    <li>Ter renda mensal inferior a um salário mínimo e meio.</li>
+                </ul>
+                <p>Dessas vagas, metade é destinada a Pretos, Pardos e Indígenas (PPIs) de forma proporcional à composição étnica do estado do Ceará, segundo o IBGE:</p>
+                <ul>
+                    <li>Pretos: 4,65%;</li>
+                    <li>Pardos: 61,88%;</li>
+                    <li>Indígenas: 0,23%.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>UVA: Inscrição e Isenção</h2>
+                <p>O período de inscrições dura mais de um mês, e todo o processo é feito pelo site da universidade. A taxa de inscrição do vestibular UVA em 2024/1 era de R$ 100,00, mas a edição de meio de ano teve um acréscimo de R$ 30,00, indo para R$ 130,00. A instituição estabeleceu requisitos para a solicitação dos benefícios. Confira-os a seguir:</p>
+                <h3>Requisitos para a isenção:</h3>
+                <ul>
+                    <li>Ser doador de sangue;</li>
+                    <li>Ser funcionário técnico-administrativo da Universidade ou seu dependente;</li>
+                    <li>Possuir algum tipo de deficiência física.</li>
+                </ul>
+                <h3>Requisitos para os 50% de desconto:</h3>
+                <ul>
+                    <li>Estudantes que tenham completado o Ensino Médio em escolas públicas no estado do Ceará.</li>
+                    <li>Estudantes que estejam cursando o 2º semestre do 3º ano do Ensino Médio em escolas públicas do estado do Ceará.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Vestibular UVA</h2>
+                <p>As provas do vestibular da UVA acontecem em apenas um dia, compostas por dois exames:</p>
+                <ul>
+                    <li>Prova Objetiva (56 questões objetivas)</li>
+                    <li>Redação</li>
+                </ul>
+                <p>A prova objetiva é aplicada no período da manhã, já a prova de redação é aplicada no período da tarde.</p>
+                <p>As inscrições são feitas exclusivamente no site da instituição. A documentação necessária para cada item está disponibilizada no edital da edição.</p>
+                <p>O Cartão de Informação deve ser apresentado junto com documento oficial com foto. Nele, constarão os locais de prova. O gabarito preliminar é publicado no dia da prova, e o resultado final em pouco mais de dois meses.</p>
+                <h3>Número de questões correspondentes a cada disciplina da Prova Objetiva:</h3>
+                <ul>
+                    <li>Língua Portuguesa: 07</li>
+                    <li>Língua Estrangeira (inglês ou espanhol): 07</li>
+                    <li>História: 07</li>
+                    <li>Geografia: 07</li>
+                    <li>Matemática: 07</li>
+                    <li>Física: 07</li>
+                    <li>Química: 07</li>
+                    <li>Biologia: 07</li>
+                </ul>
+                <p><strong>TOTAL = 56</strong></p>
+                <p>A pontuação máxima da prova objetiva é 3.500 (três mil e quinhentos). Cada questão vale 50 pontos, sendo atribuído PESO 2 (DOIS) às questões correspondentes às disciplinas específicas para cada curso. As questões da Prova Objetiva serão de múltipla escolha, com 4 (quatro) alternativas, das quais apenas uma é a correta.</p>
+                <h3>Confira a relação de conteúdos cobrados para cada graduação:</h3>
+                <ul>
+                    <li>Ciências Sociais, Geografia e Letras: Língua Portuguesa e História;</li>
+                    <li>Geografia e História: Geografia e História;</li>
+                    <li>Ciências Biológicas, Educação Física e Zootecnia: Biologia e Química;</li>
+                    <li>Ciências da Computação, Engenharia Civil e Física: Matemática e Física;</li>
+                    <li>Administração e Ciências Contábeis: Matemática e História;</li>
+                    <li>Química: Matemática e Química.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Vestibular de meio de ano</h2>
+                <p>Na seleção de meio de ano da UVA, para concorrer às vagas, os inscritos tiveram que escolher ao menos uma edição do ENEM de 2019 a 2023 para serem selecionados. Não foram considerados aproveitáveis os resultados obtidos no ENEM que apresentaram:</p>
+                <ul>
+                    <li>Menos de 30% de aproveitamento na Redação;</li>
+                    <li>Menos de 30% de aproveitamento expresso na média aritmética apurada com a soma das pontuações obtidas nas disciplinas objetivas;</li>
+                    <li>Menos de 50% de aproveitamento expresso na média aritmética resultante da soma da nota da redação com o resultado, também fruto da média apurada, das notas alcançadas nas disciplinas do ENEM.</li>
+                </ul>
+            </section>
+
+            <section class="mb-4">
+                <h2>Questões da UVA</h2>
+                <p>Para mais informações sobre as questões do vestibular, acesse o link abaixo:</p>
+                <a href="https://comentario.fariasbrito.com.br/vest/index.php?vid=133" class="btn btn-primary custom-btn">Ver Questões</a>
+            </section>
+        </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                </a>
+                <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eeepdstech?igsh=MW1nZzdqZXdna28wMg==" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

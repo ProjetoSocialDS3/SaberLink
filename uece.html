@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SaberLink - UECE</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Boxicons para ícones minimalistas -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                        </li>
+                    </ul>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-4">
+                <h1 class="display-4">Universidade Estadual do Ceará (UECE)</h1>
+                <p class="lead">
+                    O vestibular da Universidade Estadual do Ceará (UECE) é um dos principais meios de ingresso para os cursos de graduação da instituição. A seguir, estão detalhadas informações sobre o processo de inscrição, as modalidades de cotas, a estrutura do vestibular e outros aspectos relevantes.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Formas de Ingresso na UECE</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestibular Tradicional</h5>
+                                <p>O vestibular é a principal forma de ingresso para a maioria dos cursos, tanto presenciais quanto à distância.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Transferência</h5>
+                                <p>Estudantes de outras instituições podem solicitar transferência para a UECE.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mudança de Curso</h5>
+                                <p>Alunos já matriculados podem mudar de curso dentro da universidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingresso de Graduados</h5>
+                                <p>Portadores de diploma de graduação podem se inscrever em novos cursos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Vagas Remanescentes</h5>
+                                <p>A UECE também oferece vagas que não foram preenchidas em processos anteriores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Exame Nacional do Ensino Médio (ENEM)</h5>
+                                <p>Desde 2015, a UECE destina 25% das vagas anuais para candidatos que realizam o ENEM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Cotas no Vestibular</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidatos Negros, Pardos e Indígenas</h5>
+                                <p>Vagas reservadas para candidatos que se identificam como negros, pardos ou indígenas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidatos de Escolas Públicas</h5>
+                                <p>Vagas destinadas a candidatos oriundos de escolas públicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidatos com Deficiência</h5>
+                                <p>Vagas reservadas para candidatos com deficiência, que devem apresentar documentação comprobatória.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Estrutura do Vestibular</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Primeira Fase</h5>
+                                <p>Consiste em uma prova objetiva com 85 questões de múltipla escolha abrangendo as áreas de Ciências Humanas, Ciências da Natureza, Matemática e Linguagens e Códigos.</p>
+                                <p>Esta fase é eliminatória; apenas os candidatos que obtêm notas suficientes avançam para a segunda fase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Segunda Fase</h5>
+                                <p>Inclui uma redação e três provas específicas relacionadas ao curso escolhido, cada uma com 20 questões objetivas. Para alguns cursos, como Música, há exames de habilidades específicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Inscrição no Vestibular</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p>As inscrições para o vestibular são realizadas no site da Comissão Executiva do Vestibular (CEV) da UECE. Os candidatos devem:</p>
+                        <ul>
+                            <li>Ter concluído ou estar em fase de conclusão do Ensino Médio.</li>
+                            <li>Pagar a taxa de inscrição ou solicitar isenção, quando aplicável.</li>
+                            <li>Escolher entre concorrer pelas cotas ou pela ampla concorrência.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h2>Resultados e Matrículas</h2>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p>Os resultados do vestibular são divulgados após as provas, e os aprovados devem seguir as orientações para matrícula conforme os comunicados oficiais da CEV.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-branding">
+                    <a href="index.html">
+                        <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                    </a>
+                    <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                </div>
+            </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

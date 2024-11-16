@@ -50,7 +50,98 @@ main {
 
 footer {
     flex-shrink: 0;
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    padding: 2.5rem 0;
+    position: relative;
+    color: var(--text-light);
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(135deg, transparent 25%, var(--primary-color) 25%);
+    background-size: 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-branding {
+    margin-bottom: 1.5rem;
+}
+
+.footer-branding h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-branding p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 0;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
 }
 
 .card {
@@ -159,4 +250,75 @@ h1, h2 {
 
 .dark-theme .external-link:hover {
     background-color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: var(--text-light) !important;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-light);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--primary-light);
+    color: var(--text-light) !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 80%;
+    background-color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link.active:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.app-logo-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.store-badge {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
