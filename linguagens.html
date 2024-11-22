@@ -1,605 +1,398 @@
 <!doctype html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SaberLink - Linguagens, Códigos e suas Tecnologias</title>
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <!-- Boxicons para ícones minimalistas -->
-        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaberLink - Linguagens, Códigos e suas Tecnologias</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                    </li>
+                </ul>
+                <button class="btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <i class='bx bx-moon'></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
-                        </li>
-                    </ul>
-                    <button class="btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                        <i class='bx bx-moon'></i>
-                    </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <section class="mb-4">
+            <h1 class="display-4">Linguagens, Códigos e Suas Tecnologias</h1>
+            <p class="lead">Explore Recursos de Estudo para a Área de Linguagens, Códigos e Suas Tecnologias do Enem.</p>
+        </section>
+
+        <section class="mb-4">
+            <h2>Língua Portuguesa</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão de Português para o Enem: 10 Temas Que Mais Caem | Aulão Enem| Profa. Mercedes Bonorino</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/LMaE0gAsI04" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gramática no Enem [Prof. Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/X61lboe5_pM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Revisão Final para o Enem 2024 Português + Redação [Professor Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/GdGUkL2H1Tw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão Enem de Português: 10 Temas Que Mais Caem | Aulão Enem 2024 | Fernanda e Mercedes</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/SwjUGs1JPHk" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Revisão Enem | Português: Funções de Linguagem | Esquenta Enem | Descomplica</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/3E96icPEcTI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </section>
 
-        <main class="container my-4">
-            <section class="mb-4">
-                <h1 class="display-4">Linguagens, Códigos e suas Tecnologias</h1>
-                <p class="lead">
-                    Explore recursos de estudo para a área de Linguagens, Códigos e suas Tecnologias do ENEM.
-                </p>
-            </section>
-
-            <section class="mb-4">
-                <h2>Língua Portuguesa e Literatura</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Variação Linguística</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/6fBOVygtNoU" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Funções da Linguagem</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/5JrCUWnqHBk" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeos adicionais sobre Funções da Linguagem:</p>
-                                <ul>
-                                    <li><a href="https://youtube.com/watch?v=iwyZbcC9pU0" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                    <li><a href="https://youtube.com/watch?v=Hi-2LNNg4SE" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 3</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Tipos Textuais</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/ibwf_X3498c" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div> </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Gêneros Textuais</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/Ucjv4LT8CSg" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Subsídios Linguísticos</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/OjL6NrklAN4" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Período Composto por Coordenação</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/UbrR7An5ZfY" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Orações Subordinadas Adjetivas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/HQcPjCQ72bo" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Orações Subordinadas Adverbiais</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/tCoaqWAaOKk" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Orações Subordinadas Substantivas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/_kzTFOzf-_w" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Interpretação vs. Compreensão de Texto</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/alAXSk8ly-o" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Figuras de Linguagem</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/n0e75nRstcU" frameborder="0" allowfullscreen></iframe>
-                                </div>
+        <section class="mb-4">
+            <h2>Literatura</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Literatura Brasileira | Resumo Para o Enem e os Vestibulares</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/jq3LBXYLZWY" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Inglês</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Técnicas de Interpretação de Textos em Inglês</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/dwlH_Iucvao" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeos adicionais sobre Interpretação de Texto:</p>
-                                <ul>
-                                    <li><a href="https://youtube.com/watch?v=i-fBaXpiA0o" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                    <li><a href="https://youtube.com/watch?v=P3lytf80ZTQ" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 3</a></li>
-                                    <li><a href="https://youtube.com/watch?v=WOMdAPVBo2Y" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 4</a></li>
-                                    <li><a href="https://youtube.com/watch?v=kwKwpLZ9aRU" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 5</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Tempos Verbais em Inglês</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/lFFObJRqAvc" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeo adicional sobre Tempos Verbais:</p>
-                                <ul>
-                                    <li><a href="https://youtube.com/watch?v=DpRSOjDZXQU" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Frases Interrogativas em Inglês</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/j9yN78r8plw" frameborder="0" allowfullscreen></iframe>
-                                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão de Literatura Para o Enem: Principais Movimentos e Autores | Aulão Enem| Profa. Camila</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/NP3y5JVJ--I" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Espanhol</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Características</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/rw71xM3yAMg" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Frases, Cartazes e Charges</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/fhNX0gcBdPE" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Frases e Poemas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/HqY613OPMG8" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Campanhas, Notícias e Propagandas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/njPeZoC4bVY" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Poema e Música</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/OzRXhsEYhDw" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Fragmento de Texto e Poema</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/npu77AIMJ4E" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Tira em Quadrinhos e Texto</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/LOYPiwgsWMM" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Poema e Texto</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/P6by-5Sl7Ts" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Texto</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/PUxMHJMnnFA" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Análise de Fotos, Pinturas, Charges, Propagandas e Tiras</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/pSDNHlQn9L8" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Intepretação de Texto</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/cidHmE1mwUY" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeos adicionais sobre Interpretação de Texto:</p>
-                                <ul>
-                                    <li><a href="https://youtube.com/watch?v=3E13LWN65qM" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                    <li><a href="https://youtube.com/watch?v=D-bUQRQ9u6Y" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 3</a></li>
-                                    <li><a href="https://youtube.com/watch?v=bjzkCaX-Ues" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 4</a></li>
-                                    <li><a href="https://youtube.com/watch?v=7WZXt1e96QI" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 5</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Análise Geral de Provas Anteriores</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/xr2bVe6Uggc" frameborder="0" allowfullscreen></iframe>
-                                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Como Acertar Todas as Questões de Literatura | Literatura Enem O Que Mais Cai | Profinho</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/nzVxLaJFT14" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Artes</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Arte Moderna e Contemporânea</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/XKZQ-U_58XI" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Falando Sobre a Prova de 2017</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/JhLQyJj_zjg" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Como Estudar Arte Contemporânea</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/MnVbNMYo5Y4" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Performance e Realismo Soviético</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/RQ4hQ9TS_Ac" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Intertextualidade - Redação e Arte no ENEM</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/bFYUJieGp3Y" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Questões de Artes da Prova de 2018</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/3qp8sflmItQ" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Modernismo Brasileiro e Semana de Arte Moderna de 1922</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/-4_SyH1kWIA" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div >
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Linguagens Contemporâneas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/WeUPBHOeq6w" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Arte Afro-Brasileira</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/unMGiJ1K-B4" frameborder="0" allowfullscreen></iframe>
-                                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Introdução à Literatura - Linha do Tempo das Escolas Literárias [Prof. Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/WGZFBePibF0" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Educação Física</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Padrão Estético Contemporâneo</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/MZ9vaoQfrZ0" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Exercício Físico e Saúde</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/9MhYxGc-Ybo" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Condicionamento Físico e Esforços Físicos</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/sdABBXl0x5Y" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Vivência Crítica e Emancipada do Lazer</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/tialxlIhkRA" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Práticas Corporais e Autonomia</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/N8n6I63imUM" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">O Corpo Como Expressão Artística e Cultural</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/ac__CKeO0_A" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Danças</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/-ULf1Isyy9M" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeo adicional sobre Danças:</p>
-                                <ul>
-                                    <li><a href="https:// www.youtube.com/watch?v=K-BSqxmrwgU" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Esportes</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/ENOf3zkdDI4" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeo adicional sobre Esportes:</p>
-                                <ul>
-                                    <li><a href="https://www.youtube.com/watch?v=yYPnPbUbVbc" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Lutas</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/Be4taBYyrFA" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Jogos</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/UEWNxk0IylU" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeo adicional sobre Jogos:</p>
-                                <ul>
-                                    <li><a href="https://www.youtube.com/watch?v=MfnRzn1vg2Q" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Brincadeiras</h5>
-                                <div class="embed-responsive">
-                                    <iframe src="https://www.youtube.com/embed/cHX5KGnICkY" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <p class="mt-2">Vídeo adicional sobre Brincadeiras:</p>
-                                <ul>
-                                    <li><a href="https://www.youtube.com/watch?v=hKmKTDX5-vY" target="_blank" class="external-link"><i class='bx bx-link-external'></i>Parte 2</a></li>
-                                </ul>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">As 5 Principais Escolas Literárias Que Caem no Enem! - Com Professor Noslen</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/nzNytK7yVD4" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-        </main>
+        <section class="mb-4">
+            <h2>Educação Física</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Respondendo o Enem - Educação Física. [Prof. Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/FpWId03667E" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Educação Física no Enem: Como Estudar?</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/AzSdDAUMCjg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gabaritando no Enem - Educação Física</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/amuzcCAsV44" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ao Vivo | Educação Física no Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/hQk9ngNnDb0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoria | Educação Física no Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/VfTSllKpqss" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Inglês</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Como Gabaritar Inglês no Enem?</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/w1_WbCFPuRY" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão de Inglês para o Enem: Temas e Técnicas Essenciais</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/2mXyS6VFJh4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Como Interpretar e Resolver Questões de Inglês no Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/0Rxrvt34Rm8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Comentando a Prova de Inglês do Enem 2024</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/iVsWiAh1W0c" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Inglês Básico para o Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/Hy6NUuUYGrg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Espanhol</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Respondendo o Enem - Espanhol. [Prof. Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/d34itHg3TMA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">3 Dicas para a Prova de Espanhol do Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/PWWXqO5gs2M" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão Enem de Espanhol: 5 Tópicos Essenciais para a Prova</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/i14Zvj4dh2Q" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">5 Dicas de Interpretação de Texto de Espanhol para o Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/sxzZphiJkug" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão de Espanhol para o Enem: Temas e Dicas Essenciais</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/uvZvp8dI9JM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Artes</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão de Arte para o Enem: Conheça os Temas Que Mais Caem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/8jRs5CZwbQM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">O Que É Arte? | Resumo de Artes para o Enem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/mzRA0ClbarQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Respondendo o Enem - Artes. [Prof. Noslen]</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/W_DxNzFc_jg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Gabarite Linguagens no Enem Acertando Tudo de Artes!</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/YHN4UOf0OSo" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Aulão Enem de Arte: 5 Temas Que Mais Caem</h5>
+                            <div class="embed-responsive">
+                                <iframe src="https://www.youtube.com/embed/0YnhRkbXq0U" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-branding">
                 <a href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
                 </a>
                 <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
                 <div class="social-links">
@@ -609,16 +402,16 @@
                     <a href="https://github.com/ProjetoSocialDS3/SaberLink" class="social-icon" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
+                </div>
             </div>
-        </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
