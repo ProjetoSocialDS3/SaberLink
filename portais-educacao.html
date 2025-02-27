@@ -3,23 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SaberLink - Gestão de Tempo no ENEM</title>
+        <title>SaberLink - Portais de Educação</title>
         <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
         <!-- Boxicons para ícones minimalistas -->
-        <link rel="icon" href="assets/favicon.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
                 </a>
                 <button
                     class="navbar-toggler"
@@ -35,23 +35,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html"><i class='bx bx-home-alt'></i> Início</a>
+                            <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="pages/enem.html"><i class='bx bx-book'></i> ENEM</a>
+                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                            <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
+                            <a class="nav-link active" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
+                            <a class="nav-link" href="bem-estar.html"><i class='bx bx-heart'></i> Bem-Estar Estudantil</a>
                         </li>
                     </ul>
-                    <button class="btn theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                        <i class='bx bx-moon'></i>
+                    <button class="btn theme-toggle" onclick="toggleTheme()">
+                        <i class='bx bx-moon'></i> Alternar Tema
                     </button>
                 </div>
             </div>
@@ -59,144 +59,119 @@
 
         <main class="container my-4">
             <section class="mb-4">
-                <h1 class="display-4">Gestão de Tempo no ENEM</h1>
+                <h1 class="display-4">Portais de Educação</h1>
                 <p class="lead">
-                    Aprenda a gerenciar seu tempo de forma eficiente durante as provas do ENEM para maximizar seu desempenho.
+                    Explore estes portais educacionais gratuitos para complementar seus estudos para o ENEM e vestibulares.
                 </p>
             </section>
 
             <section class="mb-4">
-                <h2>Primeiro Dia: 5h30min (90 questões + redação)</h2>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-time card-icon'></i>
-                                <h5 class="card-title">Divisão do Tempo</h5>
+                                <i class='bx bx-video card-icon'></i>
+                                <h5 class="card-title">Khan Academy</h5>
                                 <p class="card-text">
-                                    - 4h30min para 90 questões (3 minutos por questão)<br>
-                                    - 1h para a redação
+                                    Plataforma educacional sem fins lucrativos que oferece aulas em vídeo e exercícios interativos em diversas disciplinas, incluindo matemática, ciências e preparação para testes como o ENEM.
                                 </p>
+                                <a href="https://pt.khanacademy.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-target-lock card-icon'></i>
-                                <h5 class="card-title">Estratégia de Questões</h5>
+                                <i class='bx bxs-graduation card-icon'></i>
+                                <h5 class="card-title">Coursera</h5>
                                 <p class="card-text">
-                                    - Comece pelas questões mais fáceis<br>
-                                    - Marque as difíceis para revisão posterior
+                                    Oferece cursos online de universidades renomadas. Embora muitos cursos sejam pagos, há uma seleção significativa de cursos gratuitos disponíveis.
                                 </p>
+                                <a href="https://www.coursera.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-edit card-icon'></i>
-                                <h5 class="card-title">Redação</h5>
+                                <i class='bx bx-brain card-icon'></i>
+                                <h5 class="card-title">edX</h5>
                                 <p class="card-text">
-                                    - Planeje antes de escrever<br>
-                                    - Estruture claramente: introdução, desenvolvimento e conclusão
+                                    Plataforma colaborativa que disponibiliza cursos online de instituições como Harvard e MIT, com muitas opções gratuitas.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Segundo Dia: 5h (90 questões)</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <i class='bx bx-time-five card-icon'></i>
-                                <h5 class="card-title">Tempo por Questão</h5>
-                                <p class="card-text">
-                                    Aproximadamente 3 minutos por questão
-                                </p>
+                                <a href="https://www.edx.org" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-run card-icon'></i>
-                                <h5 class="card-title">Ritmo Constante</h5>
+                                <i class='bx bx-laptop card-icon'></i>
+                                <h5 class="card-title">Udemy</h5>
                                 <p class="card-text">
-                                    Mantenha um ritmo constante e avalie seu progresso após 2h30min
+                                    Embora seja conhecida por seus cursos pagos, a Udemy também possui uma variedade de cursos gratuitos em diversas áreas.
                                 </p>
+                                <a href="https://www.udemy.com" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-revision card-icon'></i>
-                                <h5 class="card-title">Revisão</h5>
+                                <i class='bx bx-book-reader card-icon'></i>
+                                <h5 class="card-title">Seneca Learning</h5>
                                 <p class="card-text">
-                                    Revise o que der tempo, mas confie no seu conhecimento inicial
+                                    Oferece resumos e questões sobre conteúdos do Ensino Fundamental, Médio e ENEM, utilizando métodos baseados em neurociência para facilitar o aprendizado.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mb-4">
-                <h2>Dicas Gerais</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <i class='bx bx-test-tube card-icon'></i>
-                                <h5 class="card-title">Simulados</h5>
-                                <p class="card-text">
-                                    Pratique com simulados que imitam as condições do ENEM
-                                </p>
-                            </div>
-                        </div>
-                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <i class='bx bx-bed card-icon'></i>
-                                <h5 class="card-title">Descanse Bem</h5>
-                                <p class="card-text">
-                                    Uma boa noite de sono antes do exame é crucial
-                                </p>
+                                <a href="https://senecalearning.com/pt-br/" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-bowl-hot card-icon'></i>
-                                <h5 class="card-title">Alimentação</h5>
+                                <i class='bx bx-game card-icon'></i>
+                                <h5 class="card-title">Matific</h5>
                                 <p class="card-text">
-                                    Faça uma refeição leve e nutritiva antes da prova
+                                    Uma plataforma que oferece jogos educativos online focados em matemática, com atividades interativas alinhadas ao currículo escolar.
                                 </p>
+                                <a href="https://www.matific.com/br/" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-video-recording card-icon'></i>
+                                <h5 class="card-title">Stoodi</h5>
+                                <p class="card-text">
+                                    Plataforma de ensino online que disponibiliza videoaulas, resumos teóricos e exercícios resolvidos, voltada para estudantes do ensino médio e preparação para vestibulares.
+                                </p>
+                                <a href="https://www.stoodi.com.br" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-book-open card-icon'></i>
+                                <h5 class="card-title">Brasil Escola</h5>
+                                <p class="card-text">
+                                    Oferece uma variedade de conteúdos educacionais gratuitos, incluindo artigos, exercícios e dicas para estudantes do ensino fundamental e médio.
+                                </p>
+                                <a href="https://brasilescola.uol.com.br" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="mb-4">
-                <p>
-                    Com essas estratégias, você pode gerenciar melhor seu tempo e maximizar seu desempenho. Boa sorte!
-                </p>
             </section>
         </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-branding">
-                <a href="../index.html">
-                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                <a href="index.html">
+                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
                 </a>
                 <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
                 <div class="social-links">
@@ -209,12 +184,13 @@
             </div>
         </div>
             <div class="footer-bottom">
-                <p>&copy; 2024-2025 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
+                <p>&copy; 2024 3º Ano - Desenvolvimento de Sistemas - EEEP Professora Maria de Jesus Rodrigues Alves. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-        <script src="../script.js"></script>
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
