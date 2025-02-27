@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SaberLink - Vestibulares</title>
+        <title>SaberLink - ENEM</title>
         <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
         <!-- Boxicons para ícones minimalistas -->
-        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="assets/favicon.png" type="image/png" sizes="16x16">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
                 </a>
                 <button
                     class="navbar-toggler"
@@ -38,10 +38,10 @@
                             <a class="nav-link" href="index.html"><i class='bx bx-home-alt'></i> Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
+                            <a class="nav-link active" href="enem.html"><i class='bx bx-book'></i> ENEM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
+                            <a class="nav-link" href="vestibulares.html"><i class='bx bxs-graduation'></i> Vestibulares</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="recursos-estudo.html"><i class='bx bx-library'></i> Recursos de Estudo</a>
@@ -59,36 +59,72 @@
 
         <main class="container my-4">
             <section class="mb-4">
-                <h1 class="display-4">Vestibulares</h1>
+                <h1 class="display-4">ENEM - Exame Nacional do Ensino Médio</h1>
                 <p class="lead">
-                    Informações e recursos para os principais vestibulares da região, incluindo UECE e UVA.
+                    Prepare-se para o ENEM com nossos recursos e informações atualizadas sobre todas as áreas do conhecimento.
                 </p>
             </section>
 
             <section class="mb-4">
-                <h2>Instituições</h2>
+                <h2>Áreas do Conhecimento</h2>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-building-house card-icon'></i>
-                                <h5 class="card-title">UECE</h5>
+                                <i class='bx bx-book-reader card-icon'></i>
+                                <h5 class="card-title">Linguagens, Códigos e suas Tecnologias</h5>
                                 <p class="card-text">
-                                    Informações sobre o vestibular da Universidade Estadual do Ceará.
+                                    Estude língua portuguesa, literatura, língua estrangeira, artes, educação física e tecnologias da informação.
                                 </p>
-                                <a href="uece.html" class="btn btn-primary custom-btn">Saiba mais</a>
+                                <a href="linguagens.html" class="btn btn-primary custom-btn">Explorar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-building card-icon'></i>
-                                <h5 class="card-title">UVA</h5>
+                                <i class='bx bx-globe card-icon'></i>
+                                <h5 class="card-title">Ciências Humanas e suas Tecnologias</h5>
                                 <p class="card-text">
-                                    Detalhes sobre o processo seletivo da Universidade Estadual Vale do Acaraú.
+                                    Aprofunde-se em história, geografia, filosofia e sociologia.
                                 </p>
-                                <a href="uva.html" class="btn btn-primary custom-btn">Saiba mais</a>
+                                <a href="humanas.html" class="btn btn-primary custom-btn">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-atom card-icon'></i>
+                                <h5 class="card-title">Ciências da Natureza e suas Tecnologias</h5>
+                                <p class="card-text">
+                                    Estude química, física e biologia e suas aplicações tecnológicas.
+                                </p>
+                                <a href="natureza.html" class="btn btn-primary custom-btn">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-math card-icon'></i>
+                                <h5 class="card-title">Matemática e suas Tecnologias</h5>
+                                <p class="card-text">
+                                    Aprenda matemática e suas aplicações em situações-problema.
+                                </p>
+                                <a href="matematica.html" class="btn btn-primary custom-btn">Explorar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-pen card-icon'></i>
+                                <h5 class="card-title">Redação</h5>
+                                <p class="card-text">
+                                    Aprimore suas habilidades de escrita e argumentação para a redação do ENEM.
+                                </p>
+                                <a href="redacao.html" class="btn btn-primary custom-btn">Explorar</a>
                             </div>
                         </div>
                     </div>
@@ -96,29 +132,41 @@
             </section>
 
             <section class="mb-4">
-                <h2>Recursos e Dicas</h2>
+                <h2>Dicas e Informações</h2>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-book-open card-icon'></i>
-                                <h5 class="card-title">Materiais de Estudo</h5>
+                                <i class='bx bx-bulb card-icon'></i>
+                                <h5 class="card-title">Estratégias de Estudo</h5>
                                 <p class="card-text">
-                                    Acesse materiais específicos para cada vestibular.
+                                    Dicas eficazes para organizar seus estudos e maximizar seu aprendizado.
                                 </p>
-                                <a href="materiais-estudo.html" class="btn btn-primary custom-btn">Acessar materiais</a>
+                                <a href="estrategias-estudo.html" class="btn btn-primary custom-btn">Ler mais</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-bulb card-icon'></i>
-                                <h5 class="card-title">Dicas de Preparação</h5>
+                                <i class='bx bx-calculator card-icon'></i>
+                                <h5 class="card-title">Cálculo da Nota</h5>
                                 <p class="card-text">
-                                    Estratégias e dicas para se preparar melhor para os vestibulares.
+                                    Entenda como é calculada a nota do ENEM e como funciona o sistema TRI.
                                 </p>
-                                <a href="dicas-preparacao.html" class="btn btn-primary custom-btn">Ler dicas</a>
+                                <a href="calculo-nota.html" class="btn btn-primary custom-btn">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-time card-icon'></i>
+                                <h5 class="card-title">Gestão do Tempo</h5>
+                                <p class="card-text">
+                                    Aprenda a gerenciar seu tempo durante a prova para maximizar seu desempenho.
+                                </p>
+                                <a href="gestao-tempo.html" class="btn btn-primary custom-btn">Descubra como</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +178,7 @@
         <div class="footer-content">
             <div class="footer-branding">
                 <a href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
                 </a>
                 <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
                 <div class="social-links">

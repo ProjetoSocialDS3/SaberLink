@@ -1,6 +1,6 @@
 # SaberLink - Recursos Educacionais Gratuitos para ENEM e Vestibulares
 
-![Logotipo do Projeto](saberlinklogobackground.png)
+![Logotipo do Projeto](assets/saberlinklogobackground.png)
 
 ## Sobre Nós
 
