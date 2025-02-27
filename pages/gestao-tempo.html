@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SaberLink - Cálculo de Nota do ENEM</title>
+        <title>SaberLink - Gestão de Tempo no ENEM</title>
         <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
         <!-- Boxicons para ícones minimalistas -->
-        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="assets/favicon.png" type="image/png" sizes="16x16">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="styles.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
+                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;">
                 </a>
                 <button
                     class="navbar-toggler"
@@ -59,55 +59,47 @@
 
         <main class="container my-4">
             <section class="mb-4">
-                <h1 class="display-4">Cálculo da Nota do ENEM</h1>
+                <h1 class="display-4">Gestão de Tempo no ENEM</h1>
                 <p class="lead">
-                    Entenda como funciona o sistema de pontuação do ENEM e conheça ferramentas para calcular sua média.
+                    Aprenda a gerenciar seu tempo de forma eficiente durante as provas do ENEM para maximizar seu desempenho.
                 </p>
             </section>
 
             <section class="mb-4">
-                <h2>Como Funciona o Cálculo</h2>
+                <h2>Primeiro Dia: 5h30min (90 questões + redação)</h2>
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-calculator card-icon'></i>
-                                <h5 class="card-title">Teoria da Resposta ao Item (TRI)</h5>
+                                <i class='bx bx-time card-icon'></i>
+                                <h5 class="card-title">Divisão do Tempo</h5>
                                 <p class="card-text">
-                                    O ENEM utiliza a TRI para avaliar não apenas a quantidade de acertos, mas também a qualidade das respostas dos candidatos.
+                                    - 4h30min para 90 questões (3 minutos por questão)<br>
+                                    - 1h para a redação
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-bar-chart-alt-2 card-icon'></i>
-                                <h5 class="card-title">Pontuação por Questão</h5>
+                                <i class='bx bx-target-lock card-icon'></i>
+                                <h5 class="card-title">Estratégia de Questões</h5>
                                 <p class="card-text">
-                                    Cada questão correta vale uma quantidade variável de pontos, determinada pela dificuldade da questão. Questões mais difíceis valem mais pontos.
+                                    - Comece pelas questões mais fáceis<br>
+                                    - Marque as difíceis para revisão posterior
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-error-circle card-icon'></i>
-                                <h5 class="card-title">Erros e Acertos</h5>
-                                <p class="card-text">
-                                    O sistema penaliza erros. Uma resposta errada pode diminuir sua nota, especialmente se você tiver um número elevado de acertos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <i class='bx bx-pencil card-icon'></i>
+                                <i class='bx bx-edit card-icon'></i>
                                 <h5 class="card-title">Redação</h5>
                                 <p class="card-text">
-                                    A redação é avaliada separadamente e pode valer até 1.000 pontos. Os critérios incluem estrutura do texto, argumentação e uso da norma padrão.
+                                    - Planeje antes de escrever<br>
+                                    - Estruture claramente: introdução, desenvolvimento e conclusão
                                 </p>
                             </div>
                         </div>
@@ -116,65 +108,38 @@
             </section>
 
             <section class="mb-4">
-                <h2>Sites para Calcular a Média do ENEM</h2>
+                <h2>Segundo Dia: 5h (90 questões)</h2>
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-globe card-icon'></i>
-                                <h5 class="card-title">Vestibular Brasil Escola</h5>
+                                <i class='bx bx-time-five card-icon'></i>
+                                <h5 class="card-title">Tempo por Questão</h5>
                                 <p class="card-text">
-                                    Oferece explicação detalhada e ferramenta online para cálculo da média simples e ponderada.
+                                    Aproximadamente 3 minutos por questão
                                 </p>
-                                <a href="https://vestibular.brasilescola.uol.com.br/enem/como-calcular-media-enem.htm" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-globe card-icon'></i>
-                                <h5 class="card-title">Me Salva!</h5>
+                                <i class='bx bx-run card-icon'></i>
+                                <h5 class="card-title">Ritmo Constante</h5>
                                 <p class="card-text">
-                                    Calculadora de notas do ENEM que permite simular sua nota com base no número de acertos.
+                                    Mantenha um ritmo constante e avalie seu progresso após 2h30min
                                 </p>
-                                <a href="https://www.mesalva.com/nota-enem" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body ">
-                                <i class='bx bx-globe card-icon'></i>
-                                <h5 class="card-title">ENEM Brasil</h5>
-                                <p class="card-text">
-                                    Calculadora da média do ENEM, explicando o processo de cálculo e as metodologias envolvidas.
-                                </p>
-                                <a href="https://www.enembrasil.com.br/calculadora-enem/" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card">
                             <div class="card-body">
-                                <i class='bx bx-globe card-icon'></i>
-                                <h5 class="card-title">Mundo Educação</h5>
+                                <i class='bx bx-revision card-icon'></i>
+                                <h5 class="card-title">Revisão</h5>
                                 <p class="card-text">
-                                    Ferramenta para calcular a média do ENEM e orientações sobre como interpretar os resultados.
+                                    Revise o que der tempo, mas confie no seu conhecimento inicial
                                 </p>
-                                <a href="https://vestibular.mundoeducacao.uol.com.br/enem/como-calcular-media-enem.htm" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <i class='bx bx-globe card-icon'></i>
-                                <h5 class="card-title">Física.net</h5>
-                                <p class="card-text">
-                                    Calculadora que simula a nota do ENEM, focando na média ponderada necessária para o SISU.
-                                </p>
-                                <a href="https://fisica.net/enem/calculo-da-nota-e-da-media/enem-estimativa-nota.php" target="_blank" class="btn btn-primary custom-btn">Acessar</a>
                             </div>
                         </div>
                     </div>
@@ -182,9 +147,47 @@
             </section>
 
             <section class="mb-4">
-                <h2>Conclusão</h2>
-                <p class="lead">
-                    Esses sites não apenas ajudam no cálculo da média, mas também oferecem informações valiosas sobre o uso das notas em processos seletivos e programas de financiamento estudantil.
+                <h2>Dicas Gerais</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-test-tube card-icon'></i>
+                                <h5 class="card-title">Simulados</h5>
+                                <p class="card-text">
+                                    Pratique com simulados que imitam as condições do ENEM
+                                </p>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-bed card-icon'></i>
+                                <h5 class="card-title">Descanse Bem</h5>
+                                <p class="card-text">
+                                    Uma boa noite de sono antes do exame é crucial
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class='bx bx-bowl-hot card-icon'></i>
+                                <h5 class="card-title">Alimentação</h5>
+                                <p class="card-text">
+                                    Faça uma refeição leve e nutritiva antes da prova
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <p>
+                    Com essas estratégias, você pode gerenciar melhor seu tempo e maximizar seu desempenho. Boa sorte!
                 </p>
             </section>
         </main>
@@ -193,7 +196,7 @@
         <div class="footer-content">
             <div class="footer-branding">
                 <a href="index.html">
-                    <img src="saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
+                    <img src="assets/saberlinklogo.png" alt="SaberLink Logo" style="height: 40px;"> <!-- Ajuste a altura conforme necessário -->
                 </a>
                 <p>Recursos educacionais gratuitos para ENEM e vestibulares.</p>
                 <div class="social-links">
@@ -211,8 +214,7 @@
         </div>
     </footer>
 
-        <!-- Bootstrap JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
